@@ -16,7 +16,7 @@ namespace Microsoft.Cdn;
 /**
  * An error policy describes how Azure Front Door treats the error responses returned by an origin. Error policies are referenced by routes and can be reused across them.
  */
-@added(Versions.v2026_09_01_preview)
+@added(Versions.preview)
 @parentResource(Profile)
 model ErrorPolicy
   is Azure.ResourceManager.ProxyResource<ErrorPolicyProperties> {
@@ -28,7 +28,7 @@ model ErrorPolicy
   >;
 }
 
-@added(Versions.v2026_09_01_preview)
+@added(Versions.preview)
 @armResourceOperations
 interface ErrorPolicies {
   /**
